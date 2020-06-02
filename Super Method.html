@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<script>
+ //class Inheritance
+    class Father {
+        constructor(money){
+            
+            this.Fmoney=money;
+        }
+        
+        showFMoney(){
+            
+            return this.Fmoney+" Father Money<br>"
+        }
+        
+    }
+      class Son extends Father {
+         constructor(money){
+             super(money); // using super,suprr alwayes before this
+            
+            
+        }
+       
+        showSMoney(){
+            
+            return"Son Money<br>"
+        }
+        
+    }
+      class GrandSon extends Son {
+            constructor(money){
+             super(money);
+            
+            
+        }
+        
+        showGSMoney(){
+            
+            return"Grand Son Money<br>"
+        }
+        
+    }
+
+    var s=new Son(20000); //arugument pass
+    
+    var x=new GrandSon(3000);
+    
+    
+    document.write(s.showFMoney());
+     document.write(s.showSMoney());
+     // document.write(s.showGSMoney());
+    
+    document.write(x.showFMoney());
+    document.write(x.showSMoney());
+    document.write(x.showGSMoney());
+    
+  </script>
+
+</body>
+<html>   
