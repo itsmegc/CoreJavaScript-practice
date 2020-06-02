@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    
+    
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<script>  
+    
+    //Function Inheritance
+    function extend(child,parent){
+        
+       child.prototype=Object.create(parent.prototype);
+   child.prototype.constructor=child;
+    
+    }
+    
+    
+    
+    //Super Class
+  var Mobile =  function (){
+      
+        }
+  //Prototype Method
+       Mobile.prototype.getModel=function(){
+           
+           return this.model;
+            
+     
+        
+    }
+    
+  //Sub class
+   var Samsung =  function (model,price)
+     {
+      this.model=model;
+      this.price=price;
+     
+    }
+    //Sub class
+  var Lenovo =  function (model){
+      
+      this.model=model;
+    
+        }
+       
+        
+    //Inheritance
+  
+  extend(Samsung,Mobile);
+    extend(Lenovo,Mobile);
+   
+ /* Samsung.prototype=Object.create(Mobile.prototype);
+    Samsung.prototype.constructor=Samsung;
+    
+    Lenovo.prototype=Object.create(Mobile.prototype);
+         Lenovo.prototype.constructor=Lenovo;
+         
+         */
+     Samsung.prototype.getPrice=function(){
+           
+           return this.price;
+            
+     
+        
+    }
+    
+    var x=new Samsung('Galaxy',4000);
+    var y=new Lenovo('Phaph 2');
+    
+    console.log(x.getModel());
+    console.log(x.getPrice());
+    
+        console.log(y.getModel());
+    
+    
+    
+    </script>
+
+</body>
+<html>   

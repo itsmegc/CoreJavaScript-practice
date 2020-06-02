@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<script>  
+
+    //typeoff
+    function Mobile(model_no){
+        
+       this.model=model_no;
+        
+        //this.memory=4;
+    }
+        var samsung=new Mobile('galexy');
+     var nokia=new Mobile('nx');
+    
+       if(typeof nokia.memory !== 'undefined')
+
+{
+    
+    document.write("Available");
+    
+}
+   else{
+       document.write("Doesnt Exist");
+   }
+    
+    
+    
+    //in operator
+    
+    function Mobile(model_no){
+        
+       this.model=model_no;
+        
+       // this.memory=4;
+    }
+        var samsung=new Mobile('galexy');
+     var nokia=new Mobile('nx');
+    
+       if('memory'in nokia)
+
+{
+    
+    document.write("Available");
+    
+}
+   else{
+       document.write("Doesnt Exist");
+   }
+ //hasOwnProperty()
+       function Mobile(model_no){
+        
+       this.model=model_no;
+        
+       this.color='red';
+    }
+        var samsung=new Mobile('galexy');
+     var nokia=new Mobile('nx');
+    
+       if(nokia.hasOwnProperty('color'))
+
+{
+    
+    document.write("Available");
+    
+}
+   else{
+       document.write("Doesnt Exist");
+   } 
+    
+  </script>
+
+</body>
+<html>  

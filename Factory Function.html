@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<script>  
+    // When a function return an object
+    
+    function mobile(model_no){
+        
+        return{
+            
+            model:model_no,
+            price:function(){return "price:Rs 3000";}
+        };
+    }
+   var samsung=mobile('galaxy');
+    var lg=mobile('3100');
+    document.write(samsung.model+" "+samsung.price()+" "+lg.model+" "+lg.price());
+    
+    //with parameter
+    
+ 
+  </script>
+
+</body>
+<html>  

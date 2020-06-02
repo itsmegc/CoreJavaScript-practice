@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<script>  //Closer:A closer is a function having access to the parent scope.It preserve the data from outside.
+   // or A closer is an inner function that has access to the outer(enclosing) function's varible.
+    
+    function show()
+    {
+        var j="J a  local Variable of Outer Function";
+        document.write(j+"<br>");
+        
+         function innerFun()
+    {
+        var k="K  a  local Variable of Inner Function";
+        document.write(k+"<br>");
+          document.write(j+"<br>");
+        
+    }
+    innerFun();
+          document.write(k+"<br>");
+      
+        
+    }
+    show();
+   
+  </script>
+
+</body>
+<html>  

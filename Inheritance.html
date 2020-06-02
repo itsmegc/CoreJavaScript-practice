@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<script>
+ //class Inheritance
+    class Father {
+        
+        showFMoney(){
+            
+            return"Father Money<br>"
+        }
+        
+    }
+      class Son extends Father {
+        
+        showSMoney(){
+            
+            return"Son Money<br>"
+        }
+        
+    }
+      class GrandSon extends Son {
+        
+        showGSMoney(){
+            
+            return"Grand Son Money<br>"
+        }
+        
+    }
+
+    var s=new Son();
+    
+    var x=new GrandSon();
+    
+    
+    document.write(s.showFMoney());
+     document.write(s.showSMoney());
+     // document.write(s.showGSMoney());
+    
+    document.write(x.showFMoney());
+    document.write(x.showSMoney());
+    document.write(x.showGSMoney());
+    
+  </script>
+
+</body>
+<html>   

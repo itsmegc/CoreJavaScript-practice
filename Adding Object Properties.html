@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<script>  
+    
+    var fee={
+        
+        Rahul:100,
+        Sumit:200,
+     
+        
+        
+    }
+      document.write(fee.Rahul+" "+fee.Sumit+"<br>");
+  
+    fee.Sonam=600;  // fee['Sonam]=600;
+
+    document.write(fee.Rahul+" "+fee.Sumit+" "+fee.Sonam+"<br>");
+    fee.Show=function() {};//Adding function
+    
+    delete fee.Rahul;//delete properties
+    console.log(fee);
+
+  </script>
+
+</body>
+<html>  

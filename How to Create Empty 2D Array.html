@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<script>
+ // Using Array empty Literal
+    
+/*  var stu=[[],[],[]];
+    
+   
+    
+    
+    for(let i=0;i<3;i++)
+        {
+             
+    for(let j=0;j<3;j++)
+        {
+            
+            
+            // document.write(stu[i][j]+"  ");//output
+            
+            document.write(i+" "+j+" | ");  //index
+   
+        }
+    
+            
+            document.write("<br>");
+   
+        }
+    
+    */
+    
+    //var stu=[]; //litral
+    var rows=2;
+    var cols=3;
+    var stu =new Array(rows); //using constructor
+   for(var i=0;i<rows;i++){
+        
+       // stu[i]=[];  //litral
+       stu[i]=new Array(cols);
+        
+    }
+    
+       
+    for(let i=0;i<rows;i++)
+        {
+             
+    for(let j=0;j<cols;j++)
+        {
+            
+            
+             document.write(stu[i][j]+" : ");//output
+            
+            document.write(i+" "+j+" | ");  //index
+   
+        }
+    
+            
+            document.write("<br>");
+   
+        }
+    
+    
+    
+    
+    
+    
+  
+  
+   
+    
+  </script>
+
+</body>
+<html>   

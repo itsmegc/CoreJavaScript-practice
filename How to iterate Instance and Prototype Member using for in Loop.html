@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<script>  
+  var Mobile=function(model_no,sprice){
+      // Instance member
+      this.model=model_no;
+      //this.color='white';
+      this.price=3000;
+      this.sp=sprice;
+      
+  }
+   var samsung=new Mobile('galaxy',2000);
+    var lg= new Mobile('3100',1000);
+  // samsung.color='white';
+    // useing prototype
+    // class name.prototype.key='value';
+    
+    Mobile.prototype.color='White';  // prototype member; it cant be shown in console
+    
+    document.write(Object.keys(samsung)+"<br>");
+    for(var key in samsung){
+        
+        document.write(" "+key);
+    }
+      
+  </script>
+
+</body>
+<html>   

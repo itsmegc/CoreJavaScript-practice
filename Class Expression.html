@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<script>
+    
+    // class Expression
+ var Mobile= class {     //this is unamed class Expression ....if named class Expression var Mobile= class Mobile2
+
+     constructor(model_no,color,price){
+    
+         this.model= model_no;
+          this.pric=price;
+         this.clr= color;
+        
+     
+        
+}
+
+     show(){
+         return"model name :" +this.model+"<br>Price Rs :"+this.pric+"<br>color :" +this.clr;
+     }
+ }
+    
+    var nokia = new Mobile('X ','Black',20000);
+    document.write(nokia.show());
+  </script>
+
+</body>
+<html>   

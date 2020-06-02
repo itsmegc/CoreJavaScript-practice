@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<script>
+ //class Inheritance
+    class Father {
+        
+        
+        show(){
+            
+            return"Super Class<br>"
+        }
+        
+    }
+      class Son extends Father {
+          show(){
+            
+            return"Sub Class<br>" //method overiding
+        }
+    }
+     
+    var s=new Son(); 
+    
+    
+    
+    document.write(s.show());
+     
+     
+  </script>
+
+</body>
+<html>   

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<script>
+  
+    //Global isNaN () Method
+    // The isNaN() function is used to determines whether a value is an illegal number(Not-a-Number).
+    // This function returns true if true value equates to NaN. Otherwise it return false.
+    // This function is different from the Number specific Number.isNaN() method.
+    // The global isNaN() function,converts the tested value to a Number,then tests it.
+    //Syntax :-  isNaN(value)
+    
+    
+    var a="50 "; //isNaN can covert this type
+     var b =10;
+    var c= 20;
+    
+    var d="Hello";
+    
+    if(isNaN(b)){
+        
+        document.write("Not a number"+"<br>");
+    }
+    else{
+        
+        document.write("legal number"+"<br>");
+    }
+    
+    document.write(isNaN(b)+"<br>");//false
+       document.write(isNaN(d)+"<br>");//true
+    
+    
+    
+  </script>
+
+</body>
+<html>   

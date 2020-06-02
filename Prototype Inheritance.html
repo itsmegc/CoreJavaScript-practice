@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    
+    
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<script>  
+    //Super Class
+  var Mobile =  function (){
+        this.a=20;
+        
+    }
+    
+  
+  Mobile.prototype.z=50;
+    
+    
+    //Sub class
+     var Samsung =  function ()
+     {
+     Mobile.call(this);//class incheritance
+        this.b=30;
+             Object.prototype.x=300;
+        
+    }
+  
+    
+    //Prototype INHERITANCE
+     
+     Samsung.prototype=Object.create(Mobile.prototype);
+     
+    Samsung.prototype.constructor=Samsung;
+   Samsung.prototype.z=80;
+    
+     var m =new Mobile();
+     var s=new Samsung();
+    document.write(s.a+"<br>");
+     document.write(s.b+"<br>");
+       document.write(s.z+"<br>");
+        document.write("______________________________________<br>");
+        document.write(m.a+"<br>");
+     document.write(m.b+"<br>");// child to parent cant be acess by parent
+       document.write(m.z+"<br>");
+    document.write(m.x+"<br>");
+    
+    </script>
+
+</body>
+<html>   

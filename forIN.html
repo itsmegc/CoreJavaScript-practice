@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<script>  
+// The for in loop is used to loop through an object's properties.
+    
+   function Mobile(model_no){
+        
+       this.model=model_no;
+        this.color='white';
+       this.ram='4GB';
+        this.price=function(){
+            
+            document.write(this.model+" Price Rs.3000<br>");
+        }
+    }
+        var samsung=new Mobile('galexy');
+     var nokia=new Mobile('3310');
+    
+    
+    document.write(Object.keys(nokia)+"<br>");//only show instant member
+    
+    
+    
+    for(var specs in nokia)
+        {
+            if(typeof nokia[specs] !=='function')//when u dont wann see method
+                
+                
+            {document.write(specs+" ==> "+ nokia[specs]+"<br>");
+        }
+        }
+    
+  </script>
+
+</body>
+<html>  
